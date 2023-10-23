@@ -1,0 +1,8 @@
+<Geralt> rel:znajomy <Lambert>, <Eskel>;
+     	rel:wychowanek <Cirilla>;
+     	<zawod> "Wiedzmin"^^xsd:string;
+     	<pochodzenie> "z Rivii"^^xsd:string;
+     	<rokUrodzenia> "12.12.2115"^^xsd:date;
+<iloscBlizn> "2137"^^xsd:integer;
+<alive> "true"^^xsd:boolean.
+

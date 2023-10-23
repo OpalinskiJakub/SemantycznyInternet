@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<Lambert>
+    rel:Przyjaciel [
+   	 a rdf:Bag ;
+   	 rdf:_1 <Angouleme> ;
+   	 rdf:_2 <Emiel_Regis_Rohellec_Terzief> ;
+   	 rdf:_3 <Cahir_Mawr_Deffryn_aep_Ceallach> ;
+   	 rdf:_4 <Milva> ;
+   	 rdf:_5 <Dandelion> ;
+	 rdf:_6 <Eskel>;
+ rdf:_7 <Vesemir>;
+ rdf:_8 <Geralt>;
+    ] .
+
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ex: <http://example.org/witcher#>.
+
+ex:Kochankowie rdf:type rdf:List ;
+    rdf:first ex:Radovid ;
+    rdf:rest _:rest1 .
+
+_:rest1 rdf:first ex:Adda ;
+        rdf:rest _:rest2 .
+
+_:rest2 rdf:first ex:Geralt ;
+        rdf:rest _:rest3 .
+
+_:rest3 rdf:first ex:Shani ;
+        rdf:rest _:rest4 .
+
+_:rest4 rdf:first ex:Thaler ;
+        rdf:rest rdf:nil .

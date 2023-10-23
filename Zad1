@@ -1,0 +1,19 @@
+@base <https://wiedzmin.fandom.com/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rel: <https://wiedzmin.fandom.com/wiki/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix fhkb: <http://www.example.com/genealogy.owl#>.
+
+
+<Geralt> rel:znajomy <Lambert>, <Eskel>;
+     	rel:wychowanek <Cirilla> ;
+     	rel:romantyczna <Yennefer>, <Shani>, <Ves> ;
+     	rel:przyjaciel <Yarpen>, <Thaler>, <SigismunDijkstra>;
+     	rel:druzyna <Angouleme>, <Milva>, <Dandelion> .
+
+<Eskel> rel:przyjaciel <Vesemir>, <Angouleme>,<EmielRegis>, <CahirMawr>, <Milva>, <Dandelion>, <Geralt>.
+
+<Vesemir> rel:wychowanek <Lambert>, <Eskel>, <Geralt>.
+<Yennefer> rel:przyjaciel <Cirilla>;
+        	rel:wychowanek <Geralt>, <Cirilla>.
