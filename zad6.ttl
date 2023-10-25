@@ -29,21 +29,21 @@
     dc:identifier "2137"^^xsd:integer;
     dc:alive "true"^^xsd:boolean.
 
+<Geralt> foaf:knows <Lambert>, <Eskel>;
+    rel:studentOf <Cirilla> ;
+    rel:interests <Yennefer>, <Shani>, <Ves> ;
+    rel:friendOf <Yarpen>, <Thaler>, <SigismunDijkstra>;
+    rel:memberOf <Angouleme>, <Milva>, <Dandelion> .
 
+<Eskel> foaf:knows <Vesemir>, <Angouleme>,<EmielRegis>, <CahirMawr>, <Milva>, <Dandelion>, <Geralt>.
 
-<Eskel> a <Human>;
-        foaf:knows <Vesemir>, <Angouleme>,<EmielRegis>, <CahirMawr>, <Milva>, <Dandelion>, <Geralt>.
-
-<Vesemir> a <Witcher>;
-            fhkb:mentoredBy <Lambert>, <Eskel>, <Geralt>.
-<Yennefer> a <Human>;
-    fhkb:knows <Cirilla>;
+<Vesemir> fhkb:mentoredBy <Lambert>, <Eskel>, <Geralt>.
+<Yennefer> fhkb:knows <Cirilla>;
     fhkb:mentoredBy <Geralt>, <Cirilla>.
 
 
 
-<Lambert> a <Human>;
-        foaf:knows [
+<Lambert> foaf:knows [
                          a rdf:Bag ;
                          rdf:_1 <Angouleme> ;
                          rdf:_2 <Emiel_Regis_Rohellec_Terzief> ;
