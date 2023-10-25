@@ -1,5 +1,22 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rel: <https://wiedzmin.fandom.com/wiki/>
+@prefix rel: <https://wiedzmin.fandom.com/wiki/> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ex: <http://example.org/witcher#>.
+
+<Geralt> rel:znajomy <Lambert>, <Eskel>;
+    rel:wychowanek <Cirilla> ;
+    rel:romantyczna <Yennefer>, <Shani>, <Ves> ;
+    rel:przyjaciel <Yarpen>, <Thaler>, <SigismunDijkstra>;
+    rel:druzyna <Angouleme>, <Milva>, <Dandelion> .
+
+<Eskel> rel:przyjaciel <Vesemir>, <Angouleme>,<EmielRegis>, <CahirMawr>, <Milva>, <Dandelion>, <Geralt>.
+
+<Vesemir> rel:wychowanek <Lambert>, <Eskel>, <Geralt>.
+<Yennefer> rel:przyjaciel <Cirilla>;
+    rel:wychowanek <Geralt>, <Cirilla>.
+
+
 <Lambert>
     rel:Przyjaciel [
    	 a rdf:Bag ;
@@ -12,10 +29,6 @@
  rdf:_7 <Vesemir>;
  rdf:_8 <Geralt>;
     ] .
-
-
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix ex: <http://example.org/witcher#>.
 
 ex:Kochankowie rdf:type rdf:List ;
     rdf:first ex:Radovid ;

@@ -1,8 +1,0 @@
-<Character> rdf:type rdfs:Class .
-
-<Dwarf> rdf:type rdfs:Class ;
-	rdfs:subClassOf <Character> .
-
-foaf:Person rdfs:subClassOf <Character> .
-
-<Yarpen> a <Dwarf> .

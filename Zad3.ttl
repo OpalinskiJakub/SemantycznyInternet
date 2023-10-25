@@ -1,3 +1,12 @@
+@base <https://wiedzmin.fandom.com/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rel: <https://wiedzmin.fandom.com/wiki/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix fhkb: <http://www.example.com/genealogy.owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ex: <http://example.org/witcher#>.
+
 <Geralt> rel:znajomy <Lambert>, <Eskel>;
      	rel:wychowanek <Cirilla>;
      	<zawod> "Wiedzmin"^^xsd:string;
@@ -6,3 +15,44 @@
 <iloscBlizn> "2137"^^xsd:integer;
 <alive> "true"^^xsd:boolean.
 
+<Geralt> rel:znajomy <Lambert>, <Eskel>;
+	rel:wychowanek <Cirilla> ;
+	rel:romantyczna <Yennefer>, <Shani>, <Ves> ;
+	rel:przyjaciel <Yarpen>, <Thaler>, <SigismunDijkstra>;
+	rel:druzyna <Angouleme>, <Milva>, <Dandelion> .
+
+<Eskel> rel:przyjaciel <Vesemir>, <Angouleme>,<EmielRegis>, <CahirMawr>, <Milva>, <Dandelion>, <Geralt>.
+
+<Vesemir> rel:wychowanek <Lambert>, <Eskel>, <Geralt>.
+<Yennefer> rel:przyjaciel <Cirilla>;
+	rel:wychowanek <Geralt>, <Cirilla>.
+
+
+<Lambert>
+	rel:Przyjaciel [
+					   a rdf:Bag ;
+					   rdf:_1 <Angouleme> ;
+					   rdf:_2 <Emiel_Regis_Rohellec_Terzief> ;
+					   rdf:_3 <Cahir_Mawr_Deffryn_aep_Ceallach> ;
+					   rdf:_4 <Milva> ;
+					   rdf:_5 <Dandelion> ;
+					   rdf:_6 <Eskel>;
+					   rdf:_7 <Vesemir>;
+					   rdf:_8 <Geralt>;
+				   ] .
+
+ex:Kochankowie rdf:type rdf:List ;
+	rdf:first ex:Radovid ;
+	rdf:rest _:rest1 .
+
+_:rest1 rdf:first ex:Adda ;
+	rdf:rest _:rest2 .
+
+_:rest2 rdf:first ex:Geralt ;
+	rdf:rest _:rest3 .
+
+_:rest3 rdf:first ex:Shani ;
+	rdf:rest _:rest4 .
+
+_:rest4 rdf:first ex:Thaler ;
+	rdf:rest rdf:nil .
