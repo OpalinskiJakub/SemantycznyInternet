@@ -60,7 +60,7 @@
     dc:subject "Wiedźmin"^^xsd:string;
     dc:source "z Rivii"^^xsd:string;
     dc:date "2115-12-12"^^xsd:date;
-    dc:identifier "2137"^^xsd:integer;
+    dc:identifier "2138"^^xsd:integer;
     dc:alive "true"^^xsd:boolean.
 
 
