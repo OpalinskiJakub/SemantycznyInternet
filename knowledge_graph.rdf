@@ -1,152 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-	xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:dc11="http://purl.org/dc/elements/1.1/"
-	xmlns:rel="https://wiedzmin.fandom.com/wiki/"
-	xmlns:ex="http://example.org/witcher#"
-	xmlns:fhkb="http://www.example.com/genealogy.owl#">
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="https://wiedzmin.fandom.com/wiki/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:ns1="http://www.example.com/genealogy.owl#">
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Character">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-	</rdf:Description>
+  <rdfs:Class rdf:about="https://wiedzmin.fandom.com/wiki/Character">
+  </rdfs:Class>
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Human">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-		<rdfs:subClassOf rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-	</rdf:Description>
+  <rdfs:Class rdf:about="https://wiedzmin.fandom.com/wiki/Human">
+    <rdfs:subClassOf rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+  </rdfs:Class>
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Witcher">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-		<rdfs:subClassOf rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-	</rdf:Description>
+  <rdfs:Class rdf:about="https://wiedzmin.fandom.com/wiki/Witcher">
+    <rdfs:subClassOf rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+  </rdfs:Class>
 
-	<rdf:Description rdf:about="rel:friend">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-		<rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-		<rdfs:range rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-	</rdf:Description>
+  <rdfs:Property rdf:about="rel:friend">
+    <rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+    <rdfs:range rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+  </rdfs:Property>
 
-	<rdf:Description rdf:about="rel:student">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-		<rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-		<rdfs:range rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-	</rdf:Description>
+  <rdfs:Property rdf:about="rel:student">
+    <rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+    <rdfs:range rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+  </rdfs:Property>
 
-	<rdf:Description rdf:about="dc:subject">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-		<rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-	</rdf:Description>
+  <rdfs:Property rdf:about="http://purl.org/dc/terms/subject">
+    <rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdfs:Property>
 
-	<rdf:Description rdf:about="dc:source">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-		<rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-	</rdf:Description>
+  <rdfs:Property rdf:about="http://purl.org/dc/terms/source">
+    <rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdfs:Property>
 
-	<rdf:Description rdf:about="dc:date">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-		<rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-	</rdf:Description>
+  <rdfs:Property rdf:about="http://purl.org/dc/terms/date">
+    <rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdfs:Property>
 
-	<rdf:Description rdf:about="dc:identifier">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-		<rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-	</rdf:Description>
+  <rdfs:Property rdf:about="http://purl.org/dc/terms/identifier">
+    <rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdfs:Property>
 
-	<rdf:Description rdf:about="dc:alive">
-		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
-		<rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
-		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-		<rdfs:seeAlso rdf:resource="http://example.org/f"/>
-		<rdfs:isDefinedBy rdf:resource="http://example.org/"/>
-		<rdfs:label>Alive</rdfs:label>
-		<rdfs:comment>Person is alive</rdfs:comment>
-	</rdf:Description>
+  <rdfs:Property rdf:about="http://purl.org/dc/terms/alive">
+    <rdfs:domain rdf:resource="https://wiedzmin.fandom.com/wiki/Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:seeAlso rdf:resource="http://example.org/f"/>
+    <rdfs:isDefinedBy rdf:resource="http://example.org/"/>
+    <rdfs:label>Alive</rdfs:label>
+    <rdfs:comment>Person is alive</rdfs:comment>
+  </rdfs:Property>
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Geralt">
-		<rdf:type rdf:resource="https://wiedzmin.fandom.com/wiki/Witcher"/>
-		<rel:friend rdf:resource="https://wiedzmin.fandom.com/wiki/Lambert"/>
-		<rel:friend rdf:resource="https://wiedzmin.fandom.com/wiki/Eskel"/>
-		<rel:student rdf:resource="https://wiedzmin.fandom.com/wiki/Cirilla"/>
-		<dc11:subject>Wiedźmin</dc11:subject>
-		<dc11:source>z Rivii</dc11:source>
-		<dc11:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2115-12-12</dc11:date>
-		<dc11:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2137</dc11:identifier>
-		<dc11:alive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</dc11:alive>
-	</rdf:Description>
+  <rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Geralt">
+    <rdf:type rdf:resource="https://wiedzmin.fandom.com/wiki/Witcher"/>
+    <ns0:friend rdf:resource="https://wiedzmin.fandom.com/wiki/Lambert"/>
+    <ns0:friend rdf:resource="https://wiedzmin.fandom.com/wiki/Eskel"/>
+    <ns0:student rdf:resource="https://wiedzmin.fandom.com/wiki/Cirilla"/>
+    <dc11:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wiedźmin</dc11:subject>
+    <dc11:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z Rivii</dc11:source>
+    <dc11:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2115-12-12</dc11:date>
+    <dc11:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2137</dc11:identifier>
+    <dc11:alive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</dc11:alive>
+  </rdf:Description>
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Eskel">
-		<rdf:type rdf:resource="https://wiedzmin.fandom.com/wiki/Human"/>
-		<foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Vesemir"/>
-		<foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Angouleme"/>
-		<foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/EmielRegis"/>
-		<foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/CahirMawr"/>
-		<foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Milva"/>
-		<foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Dandelion"/>
-		<foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
-	</rdf:Description>
+  <ns0:Human rdf:about="https://wiedzmin.fandom.com/wiki/Eskel">
+    <foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Vesemir"/>
+    <foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Angouleme"/>
+    <foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/EmielRegis"/>
+    <foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/CahirMawr"/>
+    <foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Milva"/>
+    <foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Dandelion"/>
+    <foaf:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
+  </ns0:Human>
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Vesemir">
-		<rdf:type rdf:resource="https://wiedzmin.fandom.com/wiki/Witcher"/>
-		<fhkb:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Lambert"/>
-		<fhkb:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Eskel"/>
-		<fhkb:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
-	</rdf:Description>
+  <ns0:Witcher rdf:about="https://wiedzmin.fandom.com/wiki/Vesemir">
+    <ns1:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Lambert"/>
+    <ns1:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Eskel"/>
+    <ns1:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
+  </ns0:Witcher>
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Yennefer">
-		<rdf:type rdf:resource="https://wiedzmin.fandom.com/wiki/Human"/>
-		<fhkb:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Cirilla"/>
-		<fhkb:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
-		<fhkb:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Cirilla"/>
-	</rdf:Description>
+  <ns0:Human rdf:about="https://wiedzmin.fandom.com/wiki/Yennefer">
+    <ns1:knows rdf:resource="https://wiedzmin.fandom.com/wiki/Cirilla"/>
+    <ns1:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
+    <ns1:mentoredBy rdf:resource="https://wiedzmin.fandom.com/wiki/Cirilla"/>
+  </ns0:Human>
 
-	<rdf:Description rdf:about="https://wiedzmin.fandom.com/wiki/Lambert">
-		<rdf:type rdf:resource="https://wiedzmin.fandom.com/wiki/Human"/>
-		<foaf:knows rdf:nodeID="g0"/>
-	</rdf:Description>
+  <ns0:Human rdf:about="https://wiedzmin.fandom.com/wiki/Lambert">
+    <foaf:knows>
+      <rdf:Bag>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Angouleme"/>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Emiel_Regis_Rohellec_Terzief"/>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Cahir_Mawr_Deffryn_aep_Ceallach"/>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Milva"/>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Dandelion"/>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Eskel"/>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Vesemir"/>
+        <rdf:li rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
+      </rdf:Bag>
+    </foaf:knows>
 
-	<rdf:Description rdf:nodeID="g0">
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
-		<rdf:_1 rdf:resource="https://wiedzmin.fandom.com/wiki/Angouleme"/>
-		<rdf:_2 rdf:resource="https://wiedzmin.fandom.com/wiki/Emiel_Regis_Rohellec_Terzief"/>
-		<rdf:_3 rdf:resource="https://wiedzmin.fandom.com/wiki/Cahir_Mawr_Deffryn_aep_Ceallach"/>
-		<rdf:_4 rdf:resource="https://wiedzmin.fandom.com/wiki/Milva"/>
-		<rdf:_5 rdf:resource="https://wiedzmin.fandom.com/wiki/Dandelion"/>
-		<rdf:_6 rdf:resource="https://wiedzmin.fandom.com/wiki/Eskel"/>
-		<rdf:_7 rdf:resource="https://wiedzmin.fandom.com/wiki/Vesemir"/>
-		<rdf:_8 rdf:resource="https://wiedzmin.fandom.com/wiki/Geralt"/>
-	</rdf:Description>
+  </ns0:Human>
 
-	<rdf:Description rdf:about="http://example.org/witcher#Kochankowie">
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-		<rdf:first rdf:resource="http://example.org/witcher#Radovid"/>
-		<rdf:rest rdf:nodeID="rest1"/>
-	</rdf:Description>
+  <rdf:List rdf:about="http://example.org/witcher#Kochankowie">
+    <rdf:first rdf:resource="http://example.org/witcher#Radovid"/>
+    <rdf:rest>
+      <rdf:Description>
+        <rdf:first rdf:resource="http://example.org/witcher#Adda"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://example.org/witcher#Geralt"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://example.org/witcher#Shani"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="http://example.org/witcher#Thaler"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
 
-	<rdf:Description rdf:nodeID="rest1">
-		<rdf:first rdf:resource="http://example.org/witcher#Adda"/>
-		<rdf:rest rdf:nodeID="rest2"/>
-	</rdf:Description>
+              </rdf:Description>
+            </rdf:rest>
 
-	<rdf:Description rdf:nodeID="rest2">
-		<rdf:first rdf:resource="http://example.org/witcher#Geralt"/>
-		<rdf:rest rdf:nodeID="rest3"/>
-	</rdf:Description>
+          </rdf:Description>
+        </rdf:rest>
 
-	<rdf:Description rdf:nodeID="rest3">
-		<rdf:first rdf:resource="http://example.org/witcher#Shani"/>
-		<rdf:rest rdf:nodeID="rest4"/>
-	</rdf:Description>
+      </rdf:Description>
+    </rdf:rest>
 
-	<rdf:Description rdf:nodeID="rest4">
-		<rdf:first rdf:resource="http://example.org/witcher#Thaler"/>
-		<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-	</rdf:Description>
+  </rdf:List>
+
 </rdf:RDF>
