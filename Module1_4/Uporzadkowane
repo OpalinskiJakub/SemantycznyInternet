@@ -51,3 +51,43 @@ CONSTRUCT {
 WHERE {
   ?o2 foaf:knows ?o1
 }
+
+
+
+//4
+
+PREFIX ex: <https://wiedzmin.fandom.com/wiki/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK {
+  ?character rdf:type ex:Witcher .
+  ?character dc:alive "true"^^xsd:boolean .
+}
+
+
+PREFIX ex: <https://wiedzmin.fandom.com/wiki/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK {
+  ?character rdf:type ex:Witcher .
+}
+
+BASE https://wiedzmin.fandom.com/wiki/
+PREFIX xsd: http://www.w3.org/2001/XMLSchema
+PREFIX rel: https://example.org/relations
+PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+PREFIX foaf: http://xmlns.com/foaf/0.1/
+PREFIX fhkb: http://www.example.com/genealogy.owl
+PREFIX rdfs: http://www.w3.org/2000/01/rdf-schema
+PREFIX dc: http://purl.org/dc/elements/1.1/
+
+
+ASK {
+  <Geralt> dc:alive true .
+} 
+
+
