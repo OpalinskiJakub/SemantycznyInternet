@@ -10,3 +10,12 @@ CONSTRUCT {
 WHERE {
     ?o2 foaf:knows ?o1
 }
+
+
+
+CONSTRUCT {
+          ?o1 fhkb:respect  ?o2 .
+          }
+WHERE {
+      ?o2 fhkb:mentoredBy ?o1
+      }
