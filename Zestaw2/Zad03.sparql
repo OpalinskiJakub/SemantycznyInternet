@@ -3,6 +3,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX fhkb: <http://www.example.com/genealogy.owl#>
 
 CONSTRUCT {
     ?o1 foaf:like  ?o2 .
