@@ -9,7 +9,7 @@ WHERE {
     ?whom foaf:knows [ a rdf:Bag; rdfs:member ?who ]
 }
 
-
+//nalezy uruchomic osobno ale z tymi samymi BASE i PREFIX
 SELECT ?who ?whom
        WHERE {
              ?who foaf:knows ?whom
