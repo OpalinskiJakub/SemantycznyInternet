@@ -1,0 +1,514 @@
+@prefix : <urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9> .
+
+<urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://webprotege.stanford.edu/R7kJ4n1CAKbZdj8PMyL7wid
+<http://webprotege.stanford.edu/R7kJ4n1CAKbZdj8PMyL7wid> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "wiek"@pl .
+
+
+###  http://webprotege.stanford.edu/RCaBTwVAS6ihNEniomLFdQ6
+<http://webprotege.stanford.edu/RCaBTwVAS6ihNEniomLFdQ6> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "imie"@pl .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R80oZBdmsH6HTjKK6FlQRLl
+<http://webprotege.stanford.edu/R80oZBdmsH6HTjKK6FlQRLl> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain :Person ;
+                                                         rdfs:range :Person ;
+                                                         rdfs:label "jestSłabszyOd"@pl .
+
+
+###  http://webprotege.stanford.edu/R9JdIgznccgGzgtAmFdCGkX
+<http://webprotege.stanford.edu/R9JdIgznccgGzgtAmFdCGkX> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain :Person ;
+                                                         rdfs:range :Person ;
+                                                         rdfs:label "umawiałSię"@pl .
+
+
+###  http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ
+<http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain :Person ;
+                                                         rdfs:range :Person ;
+                                                         rdfs:label "posiada"@pl .
+
+
+###  http://webprotege.stanford.edu/RDgr4g5WCHsWJRkiuxBAVQZ
+<http://webprotege.stanford.edu/RDgr4g5WCHsWJRkiuxBAVQZ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain :Person ;
+                                                         rdfs:range :Person ;
+                                                         rdfs:label "walczyłZ"@pl .
+
+
+###  http://webprotege.stanford.edu/RPb7Y2vlM0zW9eiB5teJ3z
+<http://webprotege.stanford.edu/RPb7Y2vlM0zW9eiB5teJ3z> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain :Person ;
+                                                        rdfs:range :Person ;
+                                                        rdfs:label "zna"@pl .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#pokonał
+:pokonał rdf:type owl:ObjectProperty ;
+         rdfs:domain :Person ;
+         rdfs:range :Person .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#używanyPrzez
+:używanyPrzez rdf:type owl:ObjectProperty ;
+              rdfs:domain :Person ;
+              rdfs:range :Person .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#Zardzewiała
+:Zardzewiała rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW> ;
+             rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R2vPhbwan4DbojNpdYC4RW
+<http://webprotege.stanford.edu/R2vPhbwan4DbojNpdYC4RW> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Person ;
+                                                        rdfs:label "Czlowiek"@pl .
+
+
+###  http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW
+<http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW> rdf:type owl:Class ;
+                                                         rdfs:label "Broń"@pl .
+
+
+###  http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3
+<http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Person ;
+                                                         rdfs:label "Czarownica"@pl .
+
+
+###  http://webprotege.stanford.edu/R9cptMUHr3TfT2qLQTBKTW
+<http://webprotege.stanford.edu/R9cptMUHr3TfT2qLQTBKTW> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW> ;
+                                                        rdfs:label "BrońBliska"@pl .
+
+
+###  http://webprotege.stanford.edu/RBlYAt5x1rLjXlMTHHcwVwz
+<http://webprotege.stanford.edu/RBlYAt5x1rLjXlMTHHcwVwz> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Person ;
+                                                         rdfs:label "Krasnolud"@pl .
+
+
+###  http://webprotege.stanford.edu/RBve9mKIJBGVgyIfkVZeUTJ
+<http://webprotege.stanford.edu/RBve9mKIJBGVgyIfkVZeUTJ> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Person ;
+                                                         rdfs:label "Elf"@pl .
+
+
+###  http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq
+<http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW> ;
+                                                         rdfs:label "BrońDystansowa"@pl .
+
+
+###  http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts
+<http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts> rdf:type owl:Class ;
+                                                         owl:equivalentClass [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( <http://webprotege.stanford.edu/RDNoRj3pt8L4oUkR3WA4sU7>
+                                                                                             <http://webprotege.stanford.edu/Ragf7QRKae8nKEY71n83DG>
+                                                                                             <http://webprotege.stanford.edu/RtHmeDiMXoqMNYQvnrEqtD>
+                                                                                             :WiedźminDalekodystansowy
+                                                                                           )
+                                                                             ] ;
+                                                         rdfs:subClassOf :Person ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW>
+                                                                         ] ;
+                                                         rdfs:label "Wiedźmin"@pl .
+
+
+###  http://webprotege.stanford.edu/RDLzRfUXvdsh2XQgWjGmfKG
+<http://webprotege.stanford.edu/RDLzRfUXvdsh2XQgWjGmfKG> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3> ;
+                                                         rdfs:label "WiedźmySzkolne"@pl .
+
+
+###  http://webprotege.stanford.edu/RDNoRj3pt8L4oUkR3WA4sU7
+<http://webprotege.stanford.edu/RDNoRj3pt8L4oUkR3WA4sU7> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts> ;
+                                                         rdfs:label "WiedźminZeSzkołyKota"@pl .
+
+
+###  http://webprotege.stanford.edu/RDn2N29LLdqcpbEFrWRJuWI
+<http://webprotege.stanford.edu/RDn2N29LLdqcpbEFrWRJuWI> rdf:type owl:Class ;
+                                                         owl:equivalentClass [ owl:intersectionOf ( <http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3>
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                                                                                      owl:someValuesFrom :BrońMagiczna
+                                                                                                    ]
+                                                                                                  ) ;
+                                                                               rdf:type owl:Class
+                                                                             ] ;
+                                                         rdfs:label "WiedźmyKapłańskie"@pl .
+
+
+###  http://webprotege.stanford.edu/RE3dZBAvVTMWK2t2hWly0N
+<http://webprotege.stanford.edu/RE3dZBAvVTMWK2t2hWly0N> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R2vPhbwan4DbojNpdYC4RW> ;
+                                                        rdfs:label "Król"@pl .
+
+
+###  http://webprotege.stanford.edu/Ragf7QRKae8nKEY71n83DG
+<http://webprotege.stanford.edu/Ragf7QRKae8nKEY71n83DG> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts> ;
+                                                        rdfs:label "WiedźminZeSzkołyNiedźiwedzia"@pl .
+
+
+###  http://webprotege.stanford.edu/RtHmeDiMXoqMNYQvnrEqtD
+<http://webprotege.stanford.edu/RtHmeDiMXoqMNYQvnrEqtD> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts> ;
+                                                        rdfs:label "WiedźminZeSzkołyWilka"@pl .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#BrońMagiczna
+:BrońMagiczna rdf:type owl:Class ;
+              rdfs:subClassOf <http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq> .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#CzarownicaOgnia
+:CzarownicaOgnia rdf:type owl:Class ;
+                 rdfs:subClassOf <http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                   owl:someValuesFrom :BrońMagiczna
+                                 ] .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#MożliwośćNaukiWalkiBliskiej
+:MożliwośćNaukiWalkiBliskiej rdf:type owl:Class ;
+                             rdfs:subClassOf :Person .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#Oddział
+:Oddział rdf:type owl:Class .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#OddziałDystansowy
+:OddziałDystansowy rdf:type owl:Class ;
+                   rdfs:subClassOf :Oddział .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#OddziałKontaktowy
+:OddziałKontaktowy rdf:type owl:Class ;
+                   rdfs:subClassOf :Oddział .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#OddziałMieszany
+:OddziałMieszany rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                       owl:allValuesFrom [ rdf:type owl:Class ;
+                                                           owl:unionOf ( <http://webprotege.stanford.edu/R9cptMUHr3TfT2qLQTBKTW>
+                                                                         <http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq>
+                                                                       )
+                                                         ]
+                                     ] ;
+                 rdfs:subClassOf :Oddział ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                   owl:someValuesFrom <http://webprotege.stanford.edu/R9cptMUHr3TfT2qLQTBKTW>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                   owl:someValuesFrom <http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq>
+                                 ] .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#Person
+:Person rdf:type owl:Class .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#PogromcaCzarownic
+:PogromcaCzarownic rdf:type owl:Class ;
+                   rdfs:subClassOf :Person .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#WiedźminDalekodystansowy
+:WiedźminDalekodystansowy rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                                owl:allValuesFrom <http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq>
+                                              ] ;
+                          rdfs:subClassOf <http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts> ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                            owl:someValuesFrom <http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq>
+                                          ] .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#WiedźminZeSzkołyKotoNiedźwiedzia
+:WiedźminZeSzkołyKotoNiedźwiedzia rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://webprotege.stanford.edu/RDNoRj3pt8L4oUkR3WA4sU7> ,
+                                                  <http://webprotege.stanford.edu/Ragf7QRKae8nKEY71n83DG> .
+
+
+###  urn:webprotege:ontology:1a13cedf-c877-4537-a982-84b0e9f247c9#Zepsuta
+:Zepsuta rdf:type owl:Class ;
+         rdfs:subClassOf <http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R74UOhS4OOE6qbTzHhXmwlL
+<http://webprotege.stanford.edu/R74UOhS4OOE6qbTzHhXmwlL> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDLzRfUXvdsh2XQgWjGmfKG> ;
+                                                         <http://webprotege.stanford.edu/R9JdIgznccgGzgtAmFdCGkX> <http://webprotege.stanford.edu/RkjN8d6wImdU6Cg2IgYVah> ;
+                                                         <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> <http://webprotege.stanford.edu/RCYmDF5LqmDBOl1uGjUI2yt> ;
+                                                         rdfs:label "Yennefer"@pl .
+
+
+###  http://webprotege.stanford.edu/R7gsxTK0gY1Hp7HsVPeVi5k
+<http://webprotege.stanford.edu/R7gsxTK0gY1Hp7HsVPeVi5k> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9cptMUHr3TfT2qLQTBKTW> ;
+                                                         :używanyPrzez <http://webprotege.stanford.edu/RkjN8d6wImdU6Cg2IgYVah> ;
+                                                         rdfs:label "MieczSrebrny"@pl .
+
+
+###  http://webprotege.stanford.edu/R9tRpEbdXrxQ42ghSrmg0RV
+<http://webprotege.stanford.edu/R9tRpEbdXrxQ42ghSrmg0RV> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RCASLs043zP6Zl0dw5AJTIq> ;
+                                                         :używanyPrzez <http://webprotege.stanford.edu/RkjN8d6wImdU6Cg2IgYVah> ;
+                                                         rdfs:label "Łuk"@pl .
+
+
+###  http://webprotege.stanford.edu/RBr0ZhS7Gy4ihKCG2UCSdRH
+<http://webprotege.stanford.edu/RBr0ZhS7Gy4ihKCG2UCSdRH> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RBve9mKIJBGVgyIfkVZeUTJ> ;
+                                                         <http://webprotege.stanford.edu/R80oZBdmsH6HTjKK6FlQRLl> <http://webprotege.stanford.edu/RkjN8d6wImdU6Cg2IgYVah> ;
+                                                         <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> <http://webprotege.stanford.edu/R9tRpEbdXrxQ42ghSrmg0RV> ;
+                                                         <http://webprotege.stanford.edu/RDgr4g5WCHsWJRkiuxBAVQZ> <http://webprotege.stanford.edu/RkjN8d6wImdU6Cg2IgYVah> ;
+                                                         rdfs:label "Iorweth"@pl .
+
+
+###  http://webprotege.stanford.edu/RCYmDF5LqmDBOl1uGjUI2yt
+<http://webprotege.stanford.edu/RCYmDF5LqmDBOl1uGjUI2yt> rdf:type owl:NamedIndividual ;
+                                                         :używanyPrzez <http://webprotege.stanford.edu/RBr0ZhS7Gy4ihKCG2UCSdRH> ;
+                                                         rdfs:label "Różdżka"@pl .
+
+
+###  http://webprotege.stanford.edu/RkjN8d6wImdU6Cg2IgYVah
+<http://webprotege.stanford.edu/RkjN8d6wImdU6Cg2IgYVah> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RtHmeDiMXoqMNYQvnrEqtD> ;
+                                                        <http://webprotege.stanford.edu/R9JdIgznccgGzgtAmFdCGkX> <http://webprotege.stanford.edu/R74UOhS4OOE6qbTzHhXmwlL> ;
+                                                        <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> <http://webprotege.stanford.edu/R7gsxTK0gY1Hp7HsVPeVi5k> ;
+                                                        rdfs:label "Geralt"@pl .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://webprotege.stanford.edu/R2vPhbwan4DbojNpdYC4RW>
+                <http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW>
+                <http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3>
+                <http://webprotege.stanford.edu/RBlYAt5x1rLjXlMTHHcwVwz>
+                <http://webprotege.stanford.edu/RBve9mKIJBGVgyIfkVZeUTJ>
+                <http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:b rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://webprotege.stanford.edu/R8Hqx8KidNDILSLjwH22NDW> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Zardzewiała ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 1
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Zepsuta ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :BrońMagiczna ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :y
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://webprotege.stanford.edu/RPb7Y2vlM0zW9eiB5teJ3z> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :z
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> <http://webprotege.stanford.edu/RCo7VnLU6lug4B9S3hUIYts> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :z
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :z ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> <http://webprotege.stanford.edu/R9cptMUHr3TfT2qLQTBKTW> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                                                                                       ] ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MożliwośćNaukiWalkiBliskiej ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :pokonał ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://webprotege.stanford.edu/R9T1OoCep32nlusycFqNFi3> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :y
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :PogromcaCzarownic ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://webprotege.stanford.edu/R9Z7hOrLBvXnRqNsujgnZfZ> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :BrońMagiczna ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :y
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://webprotege.stanford.edu/RDn2N29LLdqcpbEFrWRJuWI> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
